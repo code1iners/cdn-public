@@ -1,3 +1,1 @@
-(() => {
-  console.log('hello', 'S220526021017');
-})();
+(async()=>{try{const{status,text}=await fetch('https://raw.githubusercontent.com/code1iners/cdn-public/production/S220526021017/index.html');if(status===404)throw new Error('Does not found external resources.');const container=document.querySelector('#live-dashboard-store-container');container.innerHTML=await text();console.log('hello','S220526021017')}catch(error){console.error(error)}})();
