@@ -1,1 +1,5 @@
-(async()=>{try{const{status,text}=await fetch('https://raw.githubusercontent.com/code1iners/cdn-public/production/S220526021017/index.html');if(status===404)throw new Error('Does not found external resources.');const container=document.querySelector('#live-dashboard-store-container');container.innerHTML=await text();console.log('hello','S220526021017')}catch(error){console.error(error)}})();
+"use strict";
+(() => {
+    const h1 = document.querySelector(".main-container h1");
+    console.log("I am S220526021017", h1.innerText);
+})();
